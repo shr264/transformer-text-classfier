@@ -2,7 +2,7 @@
 transformer text classifier
 
 conda activate rasy-pDL
-nohup python ecomm.py -m baseline_word_split_replace_nums -d /data/work/may28/ --device 0 --word_split True --replace_nums True> baseline_word_split_replace_nums.log &
+nohup python transformer_classfier.py -m baseline_word_split_replace_nums -d /data/work/may28/ --device 0 --word_split True --replace_nums True> baseline_word_split_replace_nums.log &
 
 author: Syed Rahman
 """
