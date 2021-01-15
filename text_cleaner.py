@@ -88,7 +88,9 @@ def stem_words(words: List[str]) -> List[str]:
 
 
 def lemmatize_verbs(words: List[str]) -> List[str]:
-    """Lemmatize verbs in list of tokenized words"""
+    """Lemmatize verbs in list of tokenized words
+    The word "better" has "good" as its lemma
+    """
     lemmatizer = WordNetLemmatizer()
     lemmas = [lemmatizer.lemmatize(word, pos='v') for word in words]
     return lemmas
